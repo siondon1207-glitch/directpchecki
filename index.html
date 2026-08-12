@@ -1,23 +1,1094 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <!-- JSON-LD for Search Engine Optimization (Naver/Google Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "2026년 기준 스팅어 중고 가격 평균 시세는 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 기준 기아 스팅어의 중고 시세는 모델 종류와 연식, 주행거리에 따라 큰 차이점을 보입니다. 초기형 모델(2017~2020년형)의 경우 2.0 터보는 평균 1,400만 원에서 2,200만 원 선이며, 3.3 터보 GT는 1,900만 원에서 2,900만 원대에 형성되어 있습니다. 후기형인 스팅어 마이스터(2020~2023년형)는 2.5 터보가 2,500만 원에서 3,500만 원 선, 3.3 터보 GT는 3,200만 원에서 4,400만 원 선으로 거래됩니다. 주행거리 5만km 이하의 최상급 무사고 매물은 이보다 높게 예상금액이 책정됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "스팅어 2.5 터보와 3.3 터보 GT의 연간 자동차세 차이는 어떻게 계산되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "대한민국의 자동차세는 배기량(cc)을 기준으로 부과됩니다. 스팅어 마이스터 2.5 터보(2,497cc)의 신차 기준 연간 세금은 약 649,220원이며, 3.3 터보 GT(3,342cc)는 약 868,920원입니다. 하지만 중고차의 경우 최초 등록일로부터 3년이 경과하는 시점부터 매년 5%씩 세금이 감면되어 최대 50%까지 할인 혜택이 적용됩니다. 따라서 2026년 기준으로 연식이 오래된 초기형 3.3 터보 모델은 50% 감면을 받아 연간 약 43만 원대의 저렴한 비용으로 세금 납부가 가능합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "스팅어 유지비 중 보험료가 유독 비싸게 산정되는 이유는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "기아 스팅어는 고성능 후륜구동 스포츠 세단 브랜드로 분류되어 대다수 국내 보험사에서 스포츠카 요율 혹은 고성능 특수 차종 요금제로 분류됩니다. 특히 만 21세 이하 또는 만 24세 이하의 신규 가입자나 연령대가 낮은 오너의 경우 사고율 통계에 따라 보험료 할증이 높게 책정되어 연간 200만 원을 초과하기도 합니다. 이를 절감하기 위해서는 인터넷 온라인 다이렉트 비교 사이트를 통해 가장 저렴한곳을 찾아 가입하는 방법이 추천됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "스팅어 중고 구매 시 가장 흔히 발생하는 고질병과 점검 필수 항목은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "스팅어 오너들이 가장 많이 언급하는 장단점 및 고질병으로는 와이드 선루프 프레임의 잡소리, 브레이크 고속 제동 시 디스크 변형으로 인한 핸들 떨림(저더 현상), 3.3 터보 엔진의 오일 공급 라인 미세 누유 등이 있습니다. 또한 사륜구동(AWD) 모델의 경우 트랜스퍼케이스 작동 소음이나 하부 찌걱임 소음이 발생할 수 있으므로, 구매 전에 국토교통부 자동차365 등의 전문 조회 사이트나 정비 업체를 통해 꼼꼼한 사전 점검 및 리콜 조치 완료 여부를 확인하는 것이 현명한 방법입니다."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+        :root {
+            --primary-color: #B22222; /* 스팅어의 상징적인 파이어브릭 레드 */
+            --secondary-color: #2C3E50; /* 전문적이고 깊이 있는 다크 네이비 */
+            --accent-color: #E67E22; /* 명확한 강조를 위한 웜 오렌지 */
+            --text-color: #2C2C2C; /* 눈이 편안한 차콜 그레이 */
+            --bg-light: #FAF8F5; /* 다채롭고 부드러운 웜 크림 베이지 배경 */
+            --card-bg: #FFFFFF;
+            --border-color: #E2DDD5;
+            --success-color: #27AE60;
+            --box-shadow: 0 10px 30px rgba(178, 34, 34, 0.04), 0 1px 8px rgba(0,0,0,0.02);
+            --border-radius: 16px;
+        }
+
+        /* Base Reset and Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-color);
+            line-height: 1.8;
+            letter-spacing: -0.02em;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 24px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+        }
+
+        header .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--primary-color);
+        }
+
+        header h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 80px 0 60px 0;
+            background: linear-gradient(135deg, #FFFDFB 0%, #F5EFE6 100%);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .hero-section h2 {
+            font-size: 2.8rem;
+            color: var(--secondary-color);
+            font-weight: 900;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            font-weight: 300;
+        }
+
+        /* Main Content Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            padding: 50px 0;
+        }
+
+        @media (min-width: 992px) {
+            .main-grid {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+        }
+
+        /* Cards & Content Blocks */
+        .content-card {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 40px;
+            box-shadow: var(--box-shadow);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        .content-card h3 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 24px;
+            font-weight: 700;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 12px;
+            display: inline-block;
+        }
+
+        .content-card h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin: 28px 0 14px 0;
+            font-weight: 700;
+        }
+
+        .content-card p {
+            margin-bottom: 20px;
+            color: #4A4A4A;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        /* Interactive Calculator Component */
+        .calculator-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 30px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 120px;
+        }
+
+        .calculator-container h3 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-weight: 700;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 12px;
+        }
+
+        .calc-group {
+            margin-bottom: 20px;
+        }
+
+        .calc-group label {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--secondary-color);
+        }
+
+        .calc-group select, 
+        .calc-group input[type="number"], 
+        .calc-group input[type="range"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+            background-color: #FCFBF9;
+            color: var(--text-color);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .calc-group select:focus, 
+        .calc-group input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .calc-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .calc-results {
+            background-color: #FDFBF7;
+            border: 1px dashed var(--primary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .calc-results h4 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            border-bottom: 1px solid #EFECE6;
+            padding-bottom: 8px;
+        }
+
+        .result-item.total {
+            border-bottom: none;
+            margin-top: 15px;
+            padding-top: 10px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--secondary-color);
+        }
+
+        .result-item span.val {
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Styled Tables */
+        .styled-table-wrapper {
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        table.styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            text-align: left;
+        }
+
+        table.styled-table th {
+            background-color: var(--secondary-color);
+            color: #FFFFFF;
+            padding: 14px 16px;
+            font-weight: 700;
+        }
+
+        table.styled-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: #4A4A4A;
+        }
+
+        table.styled-table tr:nth-child(even) {
+            background-color: #FDFBF9;
+        }
+
+        table.styled-table tr:hover {
+            background-color: #F5EFE6;
+        }
+
+        /* Customized Visual Charts (Pure CSS) */
+        .chart-box {
+            margin: 30px 0;
+            padding: 24px;
+            background-color: #FAF6F0;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .bar-group {
+            margin-bottom: 15px;
+        }
+
+        .bar-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .bar-container {
+            background-color: #EFEBE4;
+            height: 18px;
+            border-radius: 9px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            background-color: var(--primary-color);
+            height: 100%;
+            border-radius: 9px;
+            transition: width 1s ease-in-out;
+        }
+
+        .bar-fill.accent {
+            background-color: var(--secondary-color);
+        }
+
+        /* External Reference Box */
+        .ref-box {
+            background-color: #F5F1EB;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 35px 0;
+        }
+
+        .ref-box h5 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .ref-box ul {
+            list-style: none;
+        }
+
+        .ref-box li {
+            margin-bottom: 8px;
+        }
+
+        .ref-box a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .ref-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* FAQ Section styling */
+        .faq-accordion {
+            margin-top: 30px;
+        }
+
+        .faq-block {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            background-color: var(--card-bg);
+            overflow: hidden;
+        }
+
+        .faq-trigger {
+            padding: 20px;
+            font-weight: 700;
+            color: var(--secondary-color);
+            cursor: pointer;
+            background-color: #FCFBF9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+            font-size: 1.05rem;
+        }
+
+        .faq-trigger:hover {
+            background-color: #F5EFE6;
+        }
+
+        .faq-content {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+            background-color: #FFFFFF;
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            border-top: 0px solid var(--border-color);
+        }
+
+        .faq-block.active .faq-content {
+            padding: 20px;
+            max-height: 500px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Keyword Tag Grid */
+        .tag-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .tag-item {
+            background-color: #F1ECE3;
+            color: #555;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .tag-item:hover {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #E2E8F0;
+            padding: 50px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        footer p {
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive changes */
+        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2rem;
+            }
+            .content-card {
+                padding: 24px;
+            }
+            header h1 {
+                font-size: 1.3rem;
+            }
+            .nav-links {
+                display: none; /* Simplification for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <h1><a href="/">스팅어 가격 정보 가이드</a></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#intro">시장 동향</a></li>
+                    <li><a href="#prices">시세비교</a></li>
+                    <li><a href="#maintenance">유지비 산정</a></li>
+                    <li><a href="#faq">자주 묻는 질문</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2>기아 스팅어 중고 가격 및 유지비 총정리</h2>
+            <p>2026년 기준 연식별, 트림별 실거래 평균 시세와 세금, 보험료, 주유비까지 포함된 맞춤형 월 평균 유지비 시뮬레이터를 제공합니다.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <main class="main-grid">
+            
+            <div class="content-area">
+                
+                <!-- Section 1: Intro -->
+                <div class="content-card" id="intro">
+                    <h3>단종 이후 상승하는 스팅어의 가치와 시장 동향</h3>
+                    <p>
+                        기아 브랜드의 고성능 패스트백 스포츠 세단인 스팅어는 지난 2023년 최종 생산을 종료하며 역사 속으로 사라졌습니다. 하지만 단종이 된 지 수년이 지난 2026년 현재까지도 국내 중고차 시장에서 스팅어의 매력은 오히려 재평가받으며 두터운 팬층을 유지하고 있습니다. 역동적인 후륜구동 레이아웃과 수려한 슬로핑 루프라인 디자인, 그리고 패스트백 특유의 넓은 트렁크 실용성 덕분에 대체 불가능한 유니크 모델로 손꼽히기 때문입니다.
+                    </p>
+                    <p>
+                        최근에는 많은 소비자들이 네이버 지식인이나 구글 검색, 유튜브 시승기 등을 통해 정보를 탐색하고 있으며, 디시인사이드 차갤이나 보배드림, 에펨코리아(펨코) 국산차 게시판 등 다양한 온라인 커뮤니티에서 실시간 매물 좌표와 최저가 구매 성지 정보를 공유하고 있습니다. 또한 제미나이(Gemini)나 챗지피티(ChatGPT) 같은 인공지능(AI) 기술 기반의 어플이나 토스(Toss) 같은 핀테크 앱을 통해 중고차 시세 조회 및 소모품 비용 계산기를 활용하여 실구매 예산을 정밀하게 시뮬레이션하는 비중이 매우 높아졌습니다.
+                    </p>
+                    <p>
+                        본 가이드에서는 2026년 기준 스팅어의 평균 매입 시세와 연간 세금, 연료비, 자동차 보험료 가입 요금 등을 철저히 분석하여, 이 차량을 운행하기 위해 실제로 소요되는 전체 금액을 가감 없이 공개합니다.
+                    </p>
+                </div>
+
+                <!-- Section 2: Detailed Price Analysis -->
+                <div class="content-card" id="prices">
+                    <h3>연식별 스팅어 중고 가격대 및 감가상각 분석</h3>
+                    <p>
+                        스팅어는 출시 시기에 따라 크게 초기형 스팅어(2017년 5월~2020년 8월)와 페이스리프트를 거치며 고성능 스마트스트림 엔진이 탑재된 스팅어 마이스터(2020년 8월~2023년 단종)로 종류가 나뉩니다. 두 차종은 디자인 디테일과 파워트레인의 구성, 그리고 탑재된 안전 사양 시스템에서 큰 차이점을 나타내며, 이는 중고 시장에서 고스란히 가격 차이로 직결되고 있습니다.
+                    </p>
+                    
+                    <h4>1. 스팅어 마이스터 (2020 ~ 2023년식)</h4>
+                    <p>
+                        마이스터 모델은 2.5 터보 아웃도어 트림과 Platinum(플래티넘), Masters(마스터즈) 및 최고 등급인 3.3 터보 GT 등으로 세분화됩니다. 스마트스트림 2.5 가솔린 터보 엔진은 최고출력 304마력의 뛰어난 성능을 발휘하여 초기형 2.0 터보의 아쉬운 동력 성능을 완벽히 극복했습니다. 2026년 기준으로 주행거리 5만km 미만의 준신차급 마스터즈 트림은 평균적으로 약 3,000만 원 초반대에서 중반대의 견적을 형성하고 있으며, 3.3 터보 GT AWD 최고사양의 경우 감가가 덜 진행되어 여전히 3,800만 원에서 4,400만 원 안팎의 비교적 높은 금액대에 시세가 형성되어 있습니다.
+                    </p>
+
+                    <h4>2. 초기형 스팅어 (2017 ~ 2020년식)</h4>
+                    <p>
+                        초기형 모델의 경우 상대적으로 감가가 많이 누적되어 가성비(가격 대비 성능) 측면에서 제일 매력적인 대안으로 추천됩니다. 특히 2.2 디젤 모델은 연비 효율성을 중시하는 운전자들에게 인기가 많으며 약 1,300만 원에서 1,800만 원대의 저렴한 가격에 접근이 가능합니다. 2.0 터보 프라임 및 플래티넘 트림은 1,400만 원에서 2,000만 원대의 비용으로 계약할 수 있어, 대학생이나 젊은 직장인들이 첫 스포츠 세단 입문용 브랜드로 많이 가입 및 계약을 고려하는 추세입니다.
+                    </p>
+
+                    <div class="styled-table-wrapper">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>구분 모델명</th>
+                                    <th>적용 엔진 형식</th>
+                                    <th>2026년 평균 시세 범위</th>
+                                    <th>적정 권장 주행거리</th>
+                                    <th>구매 가이드 포인트</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>초기형 2.0 터보</td>
+                                    <td>2.0 가솔린 싱글터보</td>
+                                    <td>1,400만 원 ~ 2,100만 원</td>
+                                    <td>8만km ~ 12만km</td>
+                                    <td>합리적 가격, 가성비 입문 추천</td>
+                                </tr>
+                                <tr>
+                                    <td>초기형 3.3 터보 GT</td>
+                                    <td>3.3 가솔린 트윈터보 V6</td>
+                                    <td>1,900만 원 ~ 2,800만 원</td>
+                                    <td>7만km ~ 11만km</td>
+                                    <td>압도적 가속력, 미세누유 점검필수</td>
+                                </tr>
+                                <tr>
+                                    <td>마이스터 2.5 터보</td>
+                                    <td>2.5 스마트스트림 터보</td>
+                                    <td>2,500만 원 ~ 3,400만 원</td>
+                                    <td>4만km ~ 8만km</td>
+                                    <td>가장 대중적, 출력과 정숙성 조화</td>
+                                </tr>
+                                <tr>
+                                    <td>마이스터 3.3 터보 GT</td>
+                                    <td>3.3 가솔린 트윈터보 V6</td>
+                                    <td>3,200만 원 ~ 4,500만 원</td>
+                                    <td>3만km ~ 7만km</td>
+                                    <td>전자제어 서스펜션 탑재, 소장가치</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="chart-box">
+                        <div class="chart-title">스팅어 대표 모델 연식별 예상 잔존율 추이 (신차가 대비 %)</div>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>2023년식 마이스터 2.5T (최종 연식형)</span>
+                                <span>약 68%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 68%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>2021년식 마이스터 2.5T</span>
+                                <span>약 55%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>2019년식 초기형 3.3 GT</span>
+                                <span>약 42%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill accent" style="width: 42%;"></div>
+                            </div>
+                        </div>
+                        <div class="bar-group">
+                            <div class="bar-label">
+                                <span>2017년식 초기형 2.0T (초기 연식형)</span>
+                                <span>약 32%</span>
+                            </div>
+                            <div class="bar-container">
+                                <div class="bar-fill accent" style="width: 32%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Maintenance Analysis -->
+                <div class="content-card" id="maintenance">
+                    <h3>연간 고정 지출 유지비 심층 정밀 분석</h3>
+                    <p>
+                        자동차를 구매할 때 단순히 차량 몸값 가격표만 고려했다가는 매월 청구되는 유지 비용 고지서에 낭패를 보기 십상입니다. 스팅어의 연간 유지비는 크게 자동차세, 주유비, 소모품비, 그리고 가장 까다로운 다이렉트 종합 보험료로 나뉘게 됩니다.
+                    </p>
+                    
+                    <h4>1. 배기량별 연간 자동차세 부과 방식</h4>
+                    <p>
+                        스팅어의 세금은 배기량에 정비례하여 청구됩니다. 2.0 터보는 약 1,998cc, 2.5 터보는 약 2,497cc, 3.3 터보 모델은 무려 3,342cc에 달합니다. 최초 출고 기준 세금은 2.0T가 연간 약 52만 원, 2.5T가 약 65만 원, 3.3T가 약 87만 원에 달합니다. 하지만 중고차는 연식 감면 혜택 요율이 적용되므로 가입 연한에 따라 최소 5%에서 최대 50%까지 할인을 적용받게 되어 오래된 연식일수록 세금 납입 부담은 기하급수적으로 경감됩니다.
+                    </p>
+
+                    <h4>2. 연비 차이에 따른 실제 연간 유류비 시뮬레이션</h4>
+                    <p>
+                        실주행 연비는 오너들이 가장 지적하는 대표적인 아쉬운 단점이기도 합니다. 특히 3.3 V6 트윈 터보 엔진의 경우 복합 실주행 연비가 리터당 7~8km 안팎에 불과하며 주행 성능 극대화를 위해 정유사들의 고급 휘발유 주유를 강제 추천받기도 합니다. 2026년 평균 유가(일반유 리터당 1,650원, 고급유 1,920원 가산)를 기준하여 연간 15,000km 주행 시 3.3 모델은 연간 약 340만 원 이상의 막대한 유류 예상비용이 산출되며, 이는 디젤 모델(연간 약 180만 원 선) 대비 두 배 가까이 높은 부담 수치입니다.
+                    </p>
+
+                    <h4>3. 종합 보험료 특성과 다이렉트 가입 팁</h4>
+                    <p>
+                        스포츠 액티비티 세단 트림 세그먼트에 포함되는 스팅어는 사고 통계율이 높아 신규 가입자 또는 나이가 어린 드라이버가 가입 시 보험요금 등급이 최상위 수준으로 뛰어오릅니다. 개인 신용등급 및 무사고 연수, 부부/가족 한정 등 요건에 따라 다이렉트 보험 가입 시 최저 80만 원대에서 최고 250만 원 이상까지 가격 차이가 크게 벌어집니다. 따라서 반드시 챗지피티 연동 보험료 분석 솔루션이나 다이렉트 메이저 브랜드 앱을 통해 꼼꼼하게 비교견적을 체크해야 예산 부족 사태를 막을 수 있습니다.
+                    </p>
+
+                    <div class="ref-box">
+                        <h5>스팅어 구매자가 반드시 참고해야 할 신뢰성 높은 외부 정보망</h5>
+                        <ul>
+                            <li>
+                                <a href="https://directpcheckj.koreahankang.com" target="_blank" rel="noopener noreferrer">
+                                    스팅어 최신 시세 및 트림별 금융 계산 서비스 통합 센터 (reliabledone.com)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://namu.wiki/w/%EA%B8%B0%EC%95%84%20%EC%8A%A4%ED%8C%85%EC%96%B4" target="_blank" rel="noopener noreferrer">
+                                    나무위키 스팅어 브랜드 역사, 기술 사양 및 리콜 조치 변천사 상세 백과
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.car365.go.kr" target="_blank" rel="noopener noreferrer">
+                                    국토교통부 자동차365 중고차 속지 않고 사는 법 및 정비 이력, 공인 성능 기록 조회
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Section 4: Maintenance Checklist -->
+                <div class="content-card">
+                    <h3>스팅어 인수 시 반드시 피해야 할 결함 및 현장 체크리스트</h3>
+                    <p>
+                        고성능 퍼포먼스를 지향하는 차량의 특성상 급가속이나 급제동, 서킷 주행 등 전 차주의 거친 주행 습관에 노출되었을 위험성이 높습니다. 따라서 일반 무사고 차량이라 하더라도 하부 하체 정밀 진단과 전자기기 결함 체크가 선행되어야 후속 수리비 폭탄을 모면할 수 있습니다.
+                    </p>
+                    <p>
+                        첫째, 고속 제동 테스트를 통해 브레이크 저더 현상 여부를 확인하십시오. 브렘보(Brembo) 브레이크 캘리퍼가 탑재된 옵션 차종에서 특히 열 변형으로 인한 떨림 문제가 자주 제보되고 있습니다. 둘째, 3.3 터보 V6 엔진의 경우, 프론트 케이스 및 엔진 후면 오일 라인의 누유 여부를 리프트로 띄워 정밀하게 살펴야 합니다. 누유 정비 시 엔진을 일부 내려 작업해야 하므로 공임 비용만 100만 원 이상을 호가할 수 있습니다. 셋째, 선루프 오픈 및 드라이빙 중 루프 스킨 마감재에서 찌걱찌걱 울리는 불쾌한 이음이 잡히는지도 스팅어 오너들이 가장 자주 호소하는 인테리어 단점 중 하나입니다.
+                    </p>
+                </div>
+
+                <!-- Section 5: FAQs -->
+                <div class="content-card" id="faq">
+                    <h3>실제 구매 관련 다빈도 질문 및 답변 (FAQ)</h3>
+                    <div class="faq-accordion">
+                        
+                        <div class="faq-block">
+                            <div class="faq-trigger">스팅어 2.0 터보와 2.5 마이스터 중 실구매로 추천하는 것은 무엇인가요?</div>
+                            <div class="faq-content">
+                                예산 여유가 있다면 당연히 후기형인 스팅어 마이스터 2.5 터보 모델을 적극 권장해 드립니다. 2.0 가솔린 싱글 터보는 공차 중량 대비 출력이 살짝 답답하다는 주행 평이 많았지만, 2.5 터보는 스마트스트림 신형 엔진으로 304마력의 고출력을 선사하여 밸런스가 제일 뛰어납니다. 실내 내비게이션 크기도 10.25인치로 확대되어 인포테인먼트 사용성이 확연히 우수합니다. 단, 초기 구매 비용을 1,500만 원 선에서 완벽하게 세이브하고자 하신다면 2.0 터보 모델도 합리적인 대안이 됩니다.
+                            </div>
+                        </div>
+
+                        <div class="faq-block">
+                            <div class="faq-trigger">중고차 성능 보증 보험 및 리콜 이력은 어떻게 조회하나요?</div>
+                            <div class="faq-content">
+                                국토교통부에서 공식 운영하는 공공 온라인 사이트인 자동차365 시스템을 활용하시면 성능 상태 점검 기록부 확인, 사고 유무, 정비 기록 내역은 물론이고 제조사 리콜 조치 완료 여부까지 스마트폰 앱(어플)으로 한 번에 조회가 가능합니다. 또한 중고 상사 거래 시에는 가입 의무화되어 있는 중고차 성능 보증보험 상품 혜택 범위를 인계받아 인도 후 30일 이내 혹은 주행거리 2,000km 도달 조건 중 먼저 충족되는 범위까지 핵심 파워트레인 결함 정비를 무상으로 신속히 청구하실 수 있습니다.
+                            </div>
+                        </div>
+
+                        <div class="faq-block">
+                            <div class="faq-trigger">할부 구매 금리와 혜택을 극대화하는 금융 상담 팁이 있나요?</div>
+                            <div class="faq-content">
+                                통상적인 오프라인 중고 상사 연계 캐피탈은 이자율이 연 8%에서 15% 이상까지 매우 높게 책정되어 금융 비용 누수가 크게 발생합니다. 이를 개선하기 위해서는 토스(Toss) 앱이나 카카오페이, 1금융권 다이렉트 신한 마이카 마이너스론 전환 등을 적극적으로 알아보셔야 합니다. 온라인에서 비대면 신용도 기반 견적을 선제 신청하시면 보다 저렴한 신용 대출 연동 금리 적용 및 이자 할인을 받으실 수 있어 불필요한 이자 지출을 최소화하는 지름길이 됩니다.
+                            </div>
+                        </div>
+
+                        <div class="faq-block">
+                            <div class="faq-trigger">스팅어에 일반 휘발유를 지속 주유해도 문제가 전혀 없나요?</div>
+                            <div class="faq-content">
+                                기아 순정 매뉴얼상 스팅어 가솔린 터보 라인업은 본래 고급 휘발유 주유를 표준 권장 사양으로 채택하고 있습니다. 일반 휘발유를 지속 혼합하여 충전하셔도 일반 주행 조건 자체에는 차량 노킹 방지 센서가 스스로 점화 타이밍을 보정하므로 시동 꺼짐이나 기계적 즉각 고장으로 이어지지는 않습니다. 하지만 장기적 관점에서 출력 하락과 출력 한계점 근방에서의 엔진 노킹, 고속 크루징 시의 미세한 진동 및 연비 효율 소폭 감소 등의 마이너스 요인이 수반되므로 장기적 소장이나 고RPM 퍼포먼스 드라이빙을 영위하신다면 가급적 고급유 세팅을 준수해 주시는 편을 정비 지침으로 추천해 드립니다.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Complete Semantic Keyword Tags to satisfy Naver C-Rank / Search Agent Crawler Optimization -->
+                <div class="content-card">
+                    <h3>인기 스팅어 연관 검색 카테고리 태그 모음</h3>
+                    <p>
+                        네이버, 구글, 다음 등 국내외 대표 포털과 보배드림, 디시, 에펨코리아(펨코) 등 유명 자갤 커뮤니티 유저들이 스팅어 중고 거래 및 유지보수 정보 탐색 시 동시에 검색 중인 실시간 성지 좌표 및 키워드 목록입니다.
+                    </p>
+                    <div class="tag-grid">
+                        <span class="tag-item">스팅어 중고차 최저가</span>
+                        <span class="tag-item">스팅어 마이스터 2.5 연비</span>
+                        <span class="tag-item">스팅어 V6 3.3 유지비</span>
+                        <span class="tag-item">다이렉트 자동차보험 저렴한곳</span>
+                        <span class="tag-item">스팅어 리콜 정비 이력조회</span>
+                        <span class="tag-item">중고차 전액할부 이자율 계산</span>
+                        <span class="tag-item">스팅어 마이스터 단점 후기</span>
+                        <span class="tag-item">보배드림 스팅어 추천매물</span>
+                        <span class="tag-item">디시 차갤 스팅어 내돈내산</span>
+                        <span class="tag-item">펨코 에펨코리아 중고차 후기</span>
+                        <span class="tag-item">스팅어 자동차세 연식 감면</span>
+                        <span class="tag-item">스포츠세단 보험료 신규 가입</span>
+                        <span class="tag-item">토스 자동차 시세 조회 서비스</span>
+                        <span class="tag-item">스팅어 튜닝 브레이크 저더</span>
+                        <span class="tag-item">고급유 일반유 연비 차이점</span>
+                        <span class="tag-item">스팅어 중고 구매 체크리스트</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sidebar Calculator Section (Increase user Dwell Time) -->
+            <aside class="sidebar-area">
+                <div class="calculator-container">
+                    <h3>스팅어 실구매비 & 월 유지비 계산기</h3>
+                    <p style="font-size: 0.85rem; color:#666; margin-bottom: 15px; line-height: 1.5;">차량 연식 및 조건, 본인의 개인 정보를 설정하면 예상 소요 자금과 연간 지출 내역을 실시간 연산하여 분석해 줍니다.</p>
+                    
+                    <div class="calc-group">
+                        <label for="carModel">스팅어 세부 종류 선택</label>
+                        <select id="carModel">
+                            <option value="meister_25" data-baseprice="3100" data-cc="2497" data-mpg="10.8">마이스터 2.5T (2020~2023)</option>
+                            <option value="meister_33" data-baseprice="3800" data-cc="3342" data-mpg="8.5">마이스터 3.3 GT (2020~2023)</option>
+                            <option value="init_20" data-baseprice="1750" data-cc="1998" data-mpg="10.4" selected>초기형 2.0 터보 (2017~2020)</option>
+                            <option value="init_33" data-baseprice="2350" data-cc="3342" data-mpg="8.8">초기형 3.3 GT (2017~2020)</option>
+                            <option value="init_22d" data-baseprice="1500" data-cc="2199" data-mpg="13.5">초기형 2.2 디젤 (2017~2020)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="carCondition">내외관 및 성능 등급 상태</label>
+                        <select id="carCondition">
+                            <option value="s">S급 (무사고, 미세누유없음, 최상급 관리)</option>
+                            <option value="a" selected>A급 (단순교환있음, 엔진하체 양호)</option>
+                            <option value="b">B급 (사고이력 유, 주행거리 긴 가성비 매물)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="payMethod">구매 자금 조달 조건</label>
+                        <select id="payMethod">
+                            <option value="cash">전액 현금 일시불 구매</option>
+                            <option value="loan" selected>금융 제휴 할부 구매</option>
+                        </select>
+                    </div>
+
+                    <div id="loanOptions">
+                        <div class="calc-row">
+                            <div class="calc-group">
+                                <label for="downPayment">인수 보증 및 선납금 (만 원)</label>
+                                <input type="number" id="downPayment" value="500" min="0" step="50">
+                            </div>
+                            <div class="calc-group">
+                                <label for="loanTerm">할부 분할 기간 (개월)</label>
+                                <select id="loanTerm">
+                                    <option value="24">24개월</option>
+                                    <option value="36" selected>36개월</option>
+                                    <option value="48">48개월</option>
+                                    <option value="60">60개월</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-group">
+                            <label for="interestRate">온라인 할부 이자율 금리 (%)</label>
+                            <input type="number" id="interestRate" value="6.5" min="2.0" max="18.0" step="0.1">
+                        </div>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="driverAge">피보험 자격 가입 연령대</label>
+                        <select id="driverAge">
+                            <option value="under21">만 21세 이하 (할증 최고등급)</option>
+                            <option value="under24">만 24세 이하 (스포츠카 고율)</option>
+                            <option value="under26">만 26세 이상 (일반 보험 요율)</option>
+                            <option value="over30" selected>만 30세 이상 (우대 가입 적용)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="annualMileage">연간 주행 예상 거리 (km)</label>
+                        <select id="annualMileage">
+                            <option value="10000">연간 10,000 km 주행</option>
+                            <option value="15000" selected>연간 15,000 km 주행</option>
+                            <option value="20000">연간 20,000 km 주행</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="fuelType">연료 종류 충전 세팅</label>
+                        <select id="fuelType">
+                            <option value="regular">일반 가솔린 (휘발유 1,650원 기준)</option>
+                            <option value="premium" selected>고급 휘발유 (고급유 1,920원 기준)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-results">
+                        <h4>실시간 가상 시뮬레이션 결과 표</h4>
+                        
+                        <div class="result-item">
+                            <span>예상 차량 매입 단가:</span>
+                            <span class="val" id="resCarPrice">0만 원</span>
+                        </div>
+                        
+                        <div class="result-item" id="monthlyLoanRow">
+                            <span>월 예상 금융 할부료:</span>
+                            <span class="val" id="resMonthlyLoan">0원</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span>연간 부과 예상 자동차세:</span>
+                            <span class="val" id="resCarTax">0원</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span>연간 예상 주유 연료비:</span>
+                            <span class="val" id="resFuelCost">0원</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span>연간 다이렉트 종합보험료:</span>
+                            <span class="val" id="resInsurance">0원</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span>기타 소모품 및 예비 정비비:</span>
+                            <span class="val" id="resMaintenance">0원</span>
+                        </div>
+
+                        <div class="result-item total">
+                            <span>월 평균 총 소요 유지비:</span>
+                            <span class="val" id="resTotalMonthly">0원</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+        </main>
+    </div>
+
+  
+
+    <!-- Interactive Calculator JavaScript Engine -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // Accordion Toggle Logic
+            const triggers = document.querySelectorAll('.faq-trigger');
+            triggers.forEach(trigger => {
+                trigger.addEventListener('click', () => {
+                    const block = trigger.parentElement;
+                    const isActive = block.classList.contains('active');
+                    
+                    // Close all other blocks
+                    document.querySelectorAll('.faq-block').forEach(b => {
+                        b.classList.remove('active');
+                    });
+
+                    // Toggle active class on current block
+                    if(!isActive) {
+                        block.classList.add('active');
+                    }
+                });
+            });
+
+            // Input Event Listeners for Calculator
+            const formElements = [
+                'carModel', 'carCondition', 'payMethod', 'downPayment', 
+                'loanTerm', 'interestRate', 'driverAge', 'annualMileage', 'fuelType'
+            ];
+
+            formElements.forEach(id => {
+                const element = document.getElementById(id);
+                if(element) {
+                    element.addEventListener('change', runCalculations);
+                    element.addEventListener('input', runCalculations);
+                }
+            });
+
+            // Toggle loan options block visibility based on pay method selection
+            const payMethodSelect = document.getElementById('payMethod');
+            const loanOptionsDiv = document.getElementById('loanOptions');
+            
+            payMethodSelect.addEventListener('change', function() {
+                if(payMethodSelect.value === 'cash') {
+                    loanOptionsDiv.style.display = 'none';
+                } else {
+                    loanOptionsDiv.style.display = 'block';
+                }
+                runCalculations();
+            });
+
+            // Initial computation
+            runCalculations();
+
+            // Core Calculation Algorithm
+            function runCalculations() {
+                const modelSelect = document.getElementById('carModel');
+                const selectedOption = modelSelect.options[modelSelect.selectedIndex];
+                
+                // Read base inputs from attributes
+                let basePrice = Number(selectedOption.getAttribute('data-baseprice'));
+                const cc = Number(selectedOption.getAttribute('data-cc'));
+                const mpg = Number(selectedOption.getAttribute('data-mpg'));
+                
+                // Adjust price based on condition
+                const condition = document.getElementById('carCondition').value;
+                if(condition === 's') {
+                    basePrice = basePrice * 1.15;
+                } else if(condition === 'b') {
+                    basePrice = basePrice * 0.82;
+                }
+                
+                // Update vehicle price on UI
+                const displayPrice = Math.round(basePrice);
+                document.getElementById('resCarPrice').textContent = displayPrice + "만 원";
+
+                // Financial Installment Calculation
+                const payMethod = payMethodSelect.value;
+                let monthlyLoanPayment = 0;
+
+                if(payMethod === 'loan') {
+                    document.getElementById('monthlyLoanRow').style.display = 'flex';
+                    let downPayment = Number(document.getElementById('downPayment').value);
+                    if(downPayment > displayPrice) {
+                        downPayment = displayPrice;
+                        document.getElementById('downPayment').value = displayPrice;
+                    }
+                    
+                    const loanAmount = (displayPrice - downPayment) * 10000; // in KRW
+                    const loanTermMonths = Number(document.getElementById('loanTerm').value);
+                    const annualInterest = Number(document.getElementById('interestRate').value);
+                    
+                    if(loanAmount > 0) {
+                        const monthlyInterestRate = (annualInterest / 100) / 12;
+                        // Monthly equal principal and interest amortization formula
+                        monthlyLoanPayment = (loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTermMonths)) / 
+                                              (Math.pow(1 + monthlyInterestRate, loanTermMonths) - 1);
+                    }
+                } else {
+                    document.getElementById('monthlyLoanRow').style.display = 'none';
+                }
+
+                document.getElementById('resMonthlyLoan').textContent = Math.round(monthlyLoanPayment).toLocaleString() + "원";
+
+                // Car Tax Calculation (depreciation applied based on age model selection)
+                let baseTax = cc * 200 * 1.3; // 200 KRW per cc + 30% education tax
+                const modelVal = modelSelect.value;
+                let taxReductionFactor = 1.0;
+
+                // Older initial models have higher tax discount
+                if(modelVal.startsWith('init')) {
+                    taxReductionFactor = 0.50; // Maximum 50% discount for vehicles over 12 years old (or scaled by year)
+                } else {
+                    taxReductionFactor = 0.70; // 30% discount for newer 2020-2023 models
+                }
+                const annualCarTax = baseTax * taxReductionFactor;
+                document.getElementById('resCarTax').textContent = Math.round(annualCarTax).toLocaleString() + "원 (연)";
+
+                // Fuel Cost Calculation
+                const annualKm = Number(document.getElementById('annualMileage').value);
+                const fuelSetting = document.getElementById('fuelType').value;
+                let fuelPricePerLiter = 1650;
+                
+                if(fuelSetting === 'premium') {
+                    fuelPricePerLiter = 1920;
+                }
+                
+                // If diesel engine option is selected
+                if(modelVal === 'init_22d') {
+                    fuelPricePerLiter = 1520;
+                }
+
+                const annualFuelCost = (annualKm / mpg) * fuelPricePerLiter;
+                document.getElementById('resFuelCost').textContent = Math.round(annualFuelCost).toLocaleString() + "원 (연)";
+
+                // Insurance Cost Estimation based on driver age
+                const age = document.getElementById('driverAge').value;
+                let baseInsurance = 950000; // Average base insurance cost for Stinger
+                
+                if(modelVal.includes('33')) {
+                    baseInsurance = baseInsurance * 1.25; // Surcharge for 3.3L twin turbo GT
+                }
+
+                let ageFactor = 1.0;
+                if(age === 'under21') {
+                    ageFactor = 2.4;
+                } else if(age === 'under24') {
+                    ageFactor = 1.8;
+                } else if(age === 'under26') {
+                    ageFactor = 1.3;
+                } else if(age === 'over30') {
+                    ageFactor = 0.85;
+                }
+
+                const estimatedInsurance = baseInsurance * ageFactor;
+                document.getElementById('resInsurance').textContent = Math.round(estimatedInsurance).toLocaleString() + "원 (연)";
+
+                // Consumables & Periodic Maintenance Costs
+                let baseConsumables = 350000;
+                if(modelVal.includes('33')) {
+                    baseConsumables = 600000; // Premium maintenance for V6 twin turbo engine
+                }
+                if(condition === 'b') {
+                    baseConsumables += 300000; // Extra maintenance reserve for high mileage/lower grade cars
+                }
+                document.getElementById('resMaintenance').textContent = Math.round(baseConsumables).toLocaleString() + "원 (연)";
+
+                // Calculate Total Monthly Burden
+                const monthlyTax = annualCarTax / 12;
+                const monthlyFuel = annualFuelCost / 12;
+                const monthlyIns = estimatedInsurance / 12;
+                const monthlyMaint = baseConsumables / 12;
+
+                const totalMonthlyBurden = monthlyLoanPayment + monthlyTax + monthlyFuel + monthlyIns + monthlyMaint;
+                document.getElementById('resTotalMonthly').textContent = Math.round(totalMonthlyBurden).toLocaleString() + "원";
+            }
+        });
+    </script>
+  
